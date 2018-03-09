@@ -31,6 +31,43 @@ public class Course {
 		this.semester = semester;
 		this.year = year;
 	}
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public Integer getYear() {
+		return year;
+	}
+
+	public String getUser() {
+		return user;
+	}
+
+	public String getSemester() {
+		return semester;
+	}
+
+	@Override
+	public String toString() {
+		return "Course{" +
+				"courseCode='" + courseCode + '\'' +
+				", department='" + department + '\'' +
+				", grade='" + grade + '\'' +
+				", year=" + year +
+				", user='" + user + '\'' +
+				", semester='" + semester + '\'' +
+				'}';
+	}
+
 	// setter for a course, uses the same parameters as course
 	public void setCurrentCourse(String courseCode, String department, String grade, String user, String semester, Integer year){
 		this.courseCode = courseCode;
